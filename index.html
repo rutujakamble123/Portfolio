@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutuja Kamble | System Engineer | Portfolio</title>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTQWT881GJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TTQWT881GJ');
+  </script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Rutuja Kamble – System Engineer at Infosys | Java Developer | QA Enthusiast. Portfolio showcasing skills, projects, and experience.">
+  <meta name="keywords" content="Rutuja Kamble, Portfolio, Java Developer, QA Engineer, Infosys, MySQL, Web Development">
+  <meta name="author" content="Rutuja Kamble">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rutuja Kamble | Portfolio">
+  <meta property="og:description" content="System Engineer | Java Developer | QA Enthusiast | Portfolio">
+  <meta property="og:image" content="images/profile.jpg">
+  <meta property="og:url" content="https://rutujakamble123.github.io/SkillSetu/">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    .project-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background-color: #8a2be2;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #8a2be2;
+}
+
+    body {font-family:"Poppins",sans-serif;background:#fff;color:#333;}
+    .navbar {background:#f6f0ff;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .navbar a {color:#4b0082 !important;font-weight:500;position:relative;}
+    .navbar a::after {content:'';position:absolute;width:0;height:2px;left:0;bottom:-4px;background:#8a2be2;transition:width 0.3s;}
+    .navbar a:hover::after {width:100%;}
+    .hero {background:linear-gradient(135deg,#fff 50%,#f6f0ff 50%);padding:140px 20px;text-align:center;}
+    .hero h1 {font-size:48px;font-weight:700;color:#4b0082;}
+    .hero p {font-size:18px;color:#555;}
+    .btn-purple {background:#8a2be2;color:#fff;border-radius:25px;padding:10px 20px;margin:10px;transition:0.3s;}
+    .btn-purple:hover {background:#4b0082;color:#fff;transform:scale(1.05);}
+    .section-title {color:#4b0082;font-weight:600;text-align:center;margin-bottom:50px;}
+    #about img {border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+    .service-card {padding:25px;border-radius:15px;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:transform 0.3s;}
+    .service-card:hover {transform:translateY(-5px);}
+    .progress {height:18px;border-radius:10px;background:#f0e6ff;}
+    .progress-bar {background:#8a2be2;border-radius:10px;}
+
+    .hire-btn {
+  background: #ff4d88;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255, 77, 136, 0.6);
+}
+.hire-btn:hover {
+  background: #ff1a66;
+  box-shadow: 0 0 20px rgba(255, 77, 136, 0.9);
+  transform: scale(1.05);
+}
+
+    
+/* Service card default style */
+.service-card {
+    background-color: #fff; /* Default white background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.service-card:hover {
+    background-color: #e6e6fa; /* Light purple color on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Optional: Heading and paragraph styling */
+.service-card h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+
+    /* Experience Timeline */
+    .experience {position:relative;padding:60px 0;}
+    .timeline {position:relative;width:100%;margin-top:40px;}
+    .timeline::after {content:'';position:absolute;width:2px;background:#8a2be2;top:0;bottom:0;left:50%;margin-left:-1px;}
+    .timeline-item {position:relative;background:inherit;width:50%;margin-bottom:50px;}
+    .timeline-item.left {left:0;padding-right:30px;}
+    .timeline-item.right {left:50%;padding-left:30px;}
+    .timeline-item::after {content:'';position:absolute;width:16px;height:16px;top:15px;right:-8px;background:#fff;border:2px solid #8a2be2;border-radius:50%;z-index:1;}
+    .timeline-item.right::after {left:-8px;}
+    .timeline-text {padding:20px;background:#f6f0ff;position:relative;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08);}
+    .timeline-text h2 {margin:0 0 5px;font-size:20px;font-weight:600;color:#4b0082;}
+    .timeline-text h4 {margin:0 0 10px;font-size:16px;font-style:italic;font-weight:400;}
+    .timeline-text p {margin:0;font-size:15px;color:#555;}
+    .timeline-date {font-size:14px;font-weight:600;color:#8a2be2;margin-bottom:10px;}
+    @media(max-width:767.98px){
+      .timeline::after{left:8px;}
+      .timeline-item{width:100%;padding-left:38px;}
+      .timeline-item.right{left:0;}
+      .timeline-item::after{left:0;}
+    }
+    
+    footer {background:#4b0082;color:#fff;text-align:center;padding:40px 20px;margin-top:60px;}
+    footer a {color:#fff;margin:0 12px;font-size:24px;transition:0.3s;}
+    footer a:hover {color:#d1b3ff;transform:scale(1.2);}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Rutuja Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero" data-aos="fade-up">
+    <h1>Hello, I'm <span style="color:#8a2be2;">Rutuja Kamble</span></h1>
+    <p> Customer Support & IT Support Specialist | Infosys Trained | MCA 9.25 CGPA</p>
+    <a href="Asset/Rutuja-Kamble-2025.pdf" class="btn btn-purple">Download Resume</a>
+    <a href="#contact" class="btn btn-purple">Hire Me</a>
+  </section>
+
+  <!-- About -->
+ <section id="about" class="container py-6" style="background: #f8f9fa; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); padding-top: 4rem; padding-bottom: 4rem; margin-top: 30px;">
+  <h2 class="section-title text-center mb-3" style="font-weight: 700; color: #333;">
+    About Me
+  </h2>
+  <div style="width: 60px; height: 3px; background-color: #8a2be2;; margin: 0 auto 2rem; border-radius: 2px;"></div>
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+      <p class="lead text-center" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
+        <p>
+I am an MCA graduate with a <strong style="color:#8a2be2;">9.25 CGPA</strong> and trained at 
+<strong style="color:#8a2be2;">Infosys</strong>, where I gained hands-on experience in 
+<strong style="color:#8a2be2;">technical troubleshooting</strong>, 
+<strong style="color:#8a2be2;">customer communication</strong>, 
+and <strong style="color:#8a2be2;">IT support activities</strong>. 
+Along with my technical foundation in <strong style="color:#8a2be2;">Java, .NET, and MySQL</strong>, 
+I have developed a strong ability to explain technical issues in a simple, customer-friendly manner.
+</p>
+
+<p>
+I have always enjoyed helping users solve problems—whether it’s guiding them through an issue, 
+resolving errors, or ensuring they receive a smooth support experience. I am comfortable handling 
+<strong style="color:#8a2be2;">both voice and non-voice</strong> processes, and I bring patience, clarity, 
+and empathy to every customer interaction.
+</p>
+
+<p>
+During my MCA, I represented my department, volunteered for events and seminars, led teams, and actively 
+participated in presentations—all of which strengthened my confidence, communication skills, and leadership. 
+I strive to stand out through my reliability, adaptability, and willingness to learn continuously.
+</p>
+
+<p>
+My goal is to contribute to a growth-focused organization where I can combine my 
+<strong style="color:#8a2be2;">technical knowledge</strong> and 
+<strong style="color:#8a2be2;">customer-first mindset</strong> to deliver excellent support, solve problems effectively, 
+and create a positive experience for every customer.
+</p>
+
+ 
+
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Services -->
+ <section id="services" class="container py-6" data-aos="fade-up" style="margin-top: 30px;">
+  <h2 class="section-title">Services</h2>
+  <div class="row g-4">
+
+    <!-- Customer Support -->
+    <div class="col-md-4">
+      <div class="service-card text-center">
+        <i class="bi bi-headset fs-1 mb-3"></i>
+        <h5>Customer Support</h5>
+        <p>Providing professional support through voice and non-voice channels, resolving queries, ensuring customer satisfaction, and maintaining clear, empathetic communication.</p>
+      </div>
+    </div>
+
+    <!-- Customer Experience Enhancement -->
+    <div class="col-md-4">
+      <div class="service-card text-center">
+        <i class="bi bi-chat-heart fs-1 mb-3"></i>
+        <h5>Customer Experience Enhancement</h5>
+        <p>Enhancing customer journeys by understanding concerns, minimizing repeat issues, and delivering solutions that build trust and long-term satisfaction.</p>
+      </div>
+    </div>
+
+    <!-- Training & Knowledge Support -->
+    <div class="col-md-4">
+      <div class="service-card text-center">
+        <i class="bi bi-person-check fs-1 mb-3"></i>
+        <h5>Training & Knowledge Support</h5>
+        <p>Supporting teammates with knowledge sharing, guiding them through processes, and helping explain technical concepts in simple, clear language.</p>
+      </div>
+    </div>
+
+    <!-- IT & Technical Support -->
+    <div class="col-md-4">
+      <div class="service-card text-center">
+        <i class="bi bi-tools fs-1 mb-3"></i>
+        <h5>IT & Technical Support</h5>
+        <p>Troubleshooting software, account access, and technical issues; documenting solutions; and providing L1-level assistance using Java, SQL, and IT fundamentals.</p>
+      </div>
+    </div>
+
+    <!-- Communication & Collaboration -->
+    <div class="col-md-4">
+      <div class="service-card text-center">
+        <i class="bi bi-people fs-1 mb-3"></i>
+        <h5>Communication & Collaboration</h5>
+        <p>Coordinating with cross-functional teams, supporting presentations, managing tasks, and ensuring smooth workflow in fast-paced environments.</p>
+      </div>
+    </div>
+
+    <!-- Process Documentation & Improvement -->
+    <div class="col-md-4">
+      <div class="service-card text-center">
+        <i class="bi bi-journal-check fs-1 mb-3"></i>
+        <h5>Process Documentation & Improvement</h5>
+        <p>Creating SOPs, FAQs, troubleshooting guides, and identifying recurring issues to improve processes and enhance operational efficiency.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills -->
+<section id="skills" class="container py-6" data-aos="fade-left" style="margin-top: 30px;">
+  <h2 class="section-title text-center">Skills</h2>
+
+  <div class="row mt-5">
+
+    <!-- LEFT SIDE – Technical Skills -->
+    <div class="col-md-6 mb-4">
+      <div style="background: #fff; padding: 25px; border-radius: 12px; 
+                  box-shadow: 0 6px 18px rgba(0,0,0,0.08);">
+        <h5 class="mb-3" style="color:#8a2be2; font-weight: 600;">Technical Skills</h5>
+
+        <div class="mb-3">
+          <label>Java</label>
+          <div class="progress"><div class="progress-bar" style="width:85%;">85%</div></div>
+        </div>
+
+        <div class="mb-3">
+          <label>MySQL</label>
+          <div class="progress"><div class="progress-bar" style="width:80%;">80%</div></div>
+        </div>
+
+        <div class="mb-3">
+          <label>HTML / CSS / JavaScript</label>
+          <div class="progress"><div class="progress-bar" style="width:90%;">90%</div></div>
+        </div>
+
+        <div class="mb-3">
+          <label>QA Testing</label>
+          <div class="progress"><div class="progress-bar" style="width:70%;">70%</div></div>
+        </div>
+
+         <div class="mb-3">
+          <label>React / SpringBoot</label>
+          <div class="progress"><div class="progress-bar" style="width:70%;">70%</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE – Customer & IT Support Skills -->
+    <div class="col-md-6 mb-4">
+      <div style="background: #fff; padding: 25px; border-radius: 12px; 
+                  box-shadow: 0 6px 18px rgba(0,0,0,0.08);">
+        <h5 class="mb-3" style="color:#8a2be2; font-weight: 600;">Customer & IT Support Skills</h5>
+
+        <div class="mb-3">
+          <label>Customer Communication</label>
+          <div class="progress"><div class="progress-bar" style="width:95%;">95%</div></div>
+        </div>
+
+        <div class="mb-3">
+          <label>Problem Solving</label>
+          <div class="progress"><div class="progress-bar" style="width:90%;">90%</div></div>
+        </div>
+
+        <div class="mb-3">
+          <label>Technical Troubleshooting</label>
+          <div class="progress"><div class="progress-bar" style="width:85%;">85%</div></div>
+        </div>
+
+        <div class="mb-3">
+          <label>Process Documentation</label>
+          <div class="progress"><div class="progress-bar" style="width:80%;">80%</div></div>
+        </div>
+
+        <div class="mb-3">
+          <label>Voice & Non-Voice Support</label>
+          <div class="progress"><div class="progress-bar" style="width:90%;">90%</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- Experience -->
+ <section class="experience" id="experience">
+  <div class="container">
+    <h2 class="section-title">Experience & Education</h2>
+    <div class="timeline">
+
+      <!-- INFOSYS -->
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-text">
+          <div class="timeline-date">Oct 2024 - Feb 2025</div>
+          <h2>System Engineer</h2>
+          <h4>Infosys Mysore, Karnataka</h4>
+          <p>
+            Completed intensive training in <b>Java, DBMS, and Software Engineering</b>. 
+            Built projects like <b>FarmConnect</b> and <b>FitAura</b>, gaining hands-on 
+            experience in development, debugging, and documentation.
+          </p>
+          <p>
+            Collaborated in team tasks, group presentations, and peer-learning sessions—strengthening 
+            <b>communication, teamwork, and problem-solving</b>.
+          </p>
+        </div>
+      </div>
+
+      <!-- INTERN -->
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-text">
+          <div class="timeline-date">Aug 2023 - Jan 2024</div>
+          <h2>.NET Development Intern</h2>
+          <h4>YSAAS Infotech, Pune</h4>
+          <p>
+            Developed a shopping website and supported ERP module enhancements using <b>.NET and SQL</b>. 
+            Worked on debugging, database optimization, and API integrations.
+          </p>
+          <p>
+            Collaborated with senior developers and interacted with internal teams to clarify requirements—improving 
+            <b>client communication and teamwork</b>.
+          </p>
+        </div>
+      </div>
+
+      <!-- FULL STACK TRAINING -->
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-text">
+          <div class="timeline-date">Jan 2023 - Jun 2023</div>
+          <h2>Full Stack Development Course</h2>
+          <h4>CIIT Training Institute, Pune</h4>
+          <p>
+            Trained in <b>ASP.NET, SQL Server, C#</b>, and built multiple applications focused on
+            real-time data integration and CRUD operations.
+          </p>
+        </div>
+      </div>
+
+      <!-- MCA -->
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-text">
+          <div class="timeline-date">2020 - 2022</div>
+          <h2>Master of Computer Application</h2>
+          <h4>JSPM COE, Pune</h4>
+          <p>
+            Graduated with <b>CGPA 9.25</b>. Served as <b>Department Representative</b>, participated 
+            in <b>presentation competitions</b>, and volunteered for seminars and college events.
+          </p>
+        </div>
+      </div>
+
+      <!-- BCA -->
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-text">
+          <div class="timeline-date">2018 - 2020</div>
+          <h2>Bachelor of Computer Applications</h2>
+          <h4>VP College, Baramati</h4>
+          <p>
+            Graduated with <b>77.88% (CGPA 8.2)</b>, developing strong analytical and programming foundations.
+          </p>
+        </div>
+      </div>
+
+      <!-- 12th -->
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-text">
+          <div class="timeline-date">2016 - 2017</div>
+          <h2>Higher Secondary (12th)</h2>
+          <h4>VP College, Baramati</h4>
+          <p>
+            Secured <b>70.62%</b> under Maharashtra State Board.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Projects -->
+  <section id="projects" class="container py-6" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6" data-aos="zoom-in">
+        <div class="service-card">
+          <h5 class="fw-bold">FarmConnect</h5>
+          <p>Java–MySQL based farmer-to-market system enabling farmers to connect directly with markets.</p>
+          <a href=" https://github.com/rutujakamble123/FarmConnect/" class="project-link">View Project</a>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="zoom-in">
+        <div class="service-card">
+          <h5 class="fw-bold">FitAura</h5>
+          <p>Responsive fitness & diet planner web app with workout, diet, and progress tracking.</p>
+          <a href=" https://rutujakamble123.github.io/fitaurabyrutuja/" class="project-link">View Project</a>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="zoom-in">
+        <div class="service-card">
+          <h5 class="fw-bold">SkillSetu</h5>
+          <p>Local talent platform connecting skill providers with seekers for community empowerment.</p>
+          <a href="https://rutujakamble123.github.io/SkillSetu/" class="project-link">View Project</a>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="zoom-in">
+        <div class="service-card">
+          <h5 class="fw-bold">Online Shopping Website (.NET)</h5>
+          <p>E-commerce website built in .NET with cart, orders, and secure payment integration.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="zoom-in">
+        <div class="service-card">
+          <h5 class="fw-bold">ERP System (.NET)</h5>
+          <p>Enterprise Resource Planning (ERP) application in .NET to streamline business processes.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container py-6" data-aos="fade-up" style="width: 600px; height: 450px;margin-top: 50px;" >
+    <h2 class="section-title">Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/xandwjnd" method="POST">
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-purple w-100" id="submitBtn">
+        <span id="btnText">Send Message</span>
+        <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+      </button>
+    </form>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <div class="text-success fs-1 mb-3"><i class="bi bi-check-circle-fill"></i></div>
+        <h5>Message Sent!</h5>
+        <p>Thank you for reaching out. I’ll get back to you soon.</p>
+        <button class="btn btn-purple mt-3" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:1000, once:true});
+
+    // Contact Form Submit
+    const form = document.getElementById('contactForm');
+    const btnText = document.getElementById('btnText');
+    const btnSpinner = document.getElementById('btnSpinner');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      btnText.classList.add('d-none');
+      btnSpinner.classList.remove('d-none');
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {'Accept': 'application/json'}
+      }).then(response => {
+        btnText.classList.remove('d-none');
+        btnSpinner.classList.add('d-none');
+        if (response.ok) {
+          form.reset();
+          const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+          successModal.show();
+        } else {
+          alert('Oops! There was a problem submitting your form.');
+        }
+      }).catch(error => {
+        btnText.classList.remove('d-none');
+        btnSpinner.classList.add('d-none');
+        alert('Oops! There was a problem submitting your form.');
+      });
+    });
+  </script>
+
+  <!-- Projects -->
+  <!-- (your project cards remain unchanged from your code) -->
+
+  <!-- Contact -->
+  <!-- (your contact form & modal remain unchanged) -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 mt-5" data-aos="fade-up">
+    <div class="container text-center text-white">
+      <h2 class="fw-bold mb-3">Rutuja Kamble | Portfolio</h2>
+      <p class="mb-4">Bringing Talent to the Spotlight</p>
+      <div class="mb-4 social-icons">
+        <a href="https://www.linkedin.com/in/rutuja-kamble-7a3452190" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/rutujakamble123" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://join.skype.com/invite/w8y4sAfOTser" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/rutuja23___?igsh=dWpxejY1OWVteHB6" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=917387742545&text=Hello!%20I%20want%20to%20connect" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2025 Rutuja Kamble. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:1000, once:true});
+  </script>
+</body>
+</html>
